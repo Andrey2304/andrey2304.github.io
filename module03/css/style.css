@@ -43,16 +43,23 @@ header {
   color: white;
   display: inline-block;
   text-decoration: none;
-  padding: 9px 24px 11px 24px;
+  padding: 9px 23px 11px 23px;
   margin-right: 36px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
 
-.menu a.active:hover {
+.menu a:hover {
   background: linear-gradient(to top, #2e2e2e, #4a4a4a);
   border-left: 1px solid #838383;
   border-right: 1px solid #838383;
-  padding-left: 23px;
-  padding-right: 23px;
+}
+
+
+.menu a.active {
+  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
 }
 
 aside {
@@ -75,8 +82,12 @@ aside {
   font-size: 10pt;
   color: #656363;
 }
+.navigation a:hover {
+  margin-left: 24px;
+  color: #2c2c2c;
+}
 
-.navigation a.active:hover {
+.navigation a.active {
   margin-left: 24px;
   color: #2c2c2c;
 }
@@ -125,7 +136,11 @@ footer {
   margin-right: 36px;
 }
 
-.botmenu a.active:hover {
+.botmenu a:hover {
+  text-decoration: underline;
+}
+
+.botmenu a.active {
   text-decoration: underline;
 }
 
