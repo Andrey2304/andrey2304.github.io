@@ -114,6 +114,7 @@ aside {
 .bike img {
   display: block;
   margin: 0px auto;
+  padding-top: 46.5px;
 }
 /*.velo {
   display: block;
