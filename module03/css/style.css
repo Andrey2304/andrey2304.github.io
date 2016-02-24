@@ -37,31 +37,33 @@ header {
 
 .menu li {
   display: inline-block;
-}
-
-.menu a {
-  color: white;
-  display: block;
-  text-decoration: none;
-  padding: 9px 23px 11px 23px;
+  line-height: 40px;
+  text-align: center;
   margin-right: 36px;
+  padding-left: 23px;
+  padding-right: 23px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
 }
 
-.menu a:hover {
-  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-  border-left: 1px solid #838383;
-  border-right: 1px solid #838383;
-
+.menu a {
+  color: white;
+  text-decoration: none;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-
-.menu a.active {
+.menu li.active {
   background: linear-gradient(to top, #2e2e2e, #4a4a4a);
   border-left: 1px solid #838383;
   border-right: 1px solid #838383;
+}
 
+.menu li:hover {
+  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
 }
 
 aside {
@@ -109,19 +111,15 @@ aside {
   width: 674px;
   height: 400px;
   border: 1px solid #c8c8c8;
+  text-align: center;
+  line-height: 400px;
+
 }
 
 .bike img {
-  display: block;
-  margin: 0px auto;
-  padding-top: 46.5px;
+  display: inline;
+  vertical-align: middle;
 }
-/*.velo {
-  display: block;
-  padding: 46.5px 87px;
-  border: 1px solid #c8c8c8;
-}*/
-
 
 footer {
   background: linear-gradient(to top, #444343, #5e5e5e);
@@ -135,7 +133,7 @@ footer {
 
 .botmenu li {
   display: inline-block;
-  }
+}
 
 .botmenu a {
   color: #2c2c2c;
