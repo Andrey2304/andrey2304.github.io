@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+}
+#container {
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	width:496.5px;
+	height:526.5px;
+	margin-top: -263.5px;
+	margin-left: -248.25px;
+}
+table {
+	width: 100%;
+	height: 100%;
+  border-collapse: collapse;
+  box-shadow: 10px 10px #999;
+}
+td {
+  border: 9.5px solid #353031;
+  empty-cells: show;
+}
+.top {
+  border-top: 1px solid #353031;
+}
+.left {
+  border-left: 1px solid #353031;
+}
+.right {
+  border-right: 1px solid #353031;
+}
+.bottom {
+  border-bottom: 1px solid #353031;
+}

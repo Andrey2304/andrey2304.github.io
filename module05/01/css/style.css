@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-roman-webfont.eot');
+    src: url('../fonts/helveticaneue-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-roman-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  text-align: center;
+  font-family: 'Helvetica Neue Regular', sans-serif;
+  width: 1215px;
+  margin: 0 auto;
+}
+menu {
+  background-color: #075190;
+  height: 36px;
+  color: white;
+  font-size: 14px;
+}
+main {
+  background: url(../img/bikes.jpg);
+  height: 1028px;
+}
+.ola {
+  display: inline-block;
+  padding: 11px 12px 10px 13px;
+  background: linear-gradient(to top, #2e7ac4, #51b1dc);
+  float:right;
+  margin-right: 20px;
+  border-left: 1px solid #52a0da;
+  border-right: 1px solid #59a3de;
+  border-bottom: 1px solid #4299d2;
+}
+.ola a {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 1);
+}
+.minhas {
+  float: right;
+}
+.minhas a{
+  display: inline-block;
+  padding: 11px 18px 11px 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+.flag {
+  float:right;
+}
+.flag a{
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  padding: 3px 10px 2px 19px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.top_menu {
+  float: right;
+}
+.top_menu ul {
+  padding-right: 10px;
+}
+.top_menu li {
+  float: left;
+  padding: 11px 13px 11px 14px;
+}
+.top_menu li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.top_menu li.active {
+  background: #4eabda;
+}
+.top_menu li.active a {
+  color: rgba(255, 255, 255, 1);
+}
+.top_menu li:hover {
+  background: #4eabda;
+}
+.top_menu li:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+main {
+  clear: both; /*Зачистим границы после меню*/
+  text-align: center;
+  line-height: 1028px;
+}
+.form {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  color: white;
+  width: 560px;
+  height: 613px;
+}
+.cadastre {
+  display: block;
+  width: 560px;
+  height: 62px;
+  background: rgba(1, 1, 1, 0.63);
+  margin-bottom: 2px;
+}
+.cadastre p {
+  font-size: 24px;
+  padding-top: 18px;
+}
+.login {
+  display: block;
+  width: 560px;
+  height: 548px;
+  background: rgba(1, 1, 1, 0.63);
+}
+.fb {
+  padding-top: 35px;
+  padding-bottom: 26px;
+}
+.ou li {
+  display: inline-block;
+  line-height: 14px;
+}
+.ou li hr {
+  display: inline-block;
+  width: 120px;
+  background: #666;
+  border: none;
+  height: 1px;
+  box-shadow: 0 1px #000;
+  line-height: normal;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+.ou li p{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 2px;
+}
+.account {
+  padding-top: 25px;
+}
+.data {
+  width: 259px;
+  height: 33px;
+  margin-bottom: 18px;
+  background: #000;
+  border: none;
+  box-shadow: 0 1px #666;
+  color: #fff;
+  padding-left: 17px;
+  font-size: 14px;
+}
+.data::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+.data::-moz-placeholder {
+  color: #ccc;
+  font-size: 14px;
+}
+.data:focus {
+  color: #fffbfb;
+  background: #1b5288;
+  box-shadow:
+    inset 0 0 10px rgba(0, 0, 0, 0.3),
+    0 0 25px rgba(66, 115, 144, 1),
+    0 0 5px rgba(70, 128, 171, 1),
+    0 1px #689bcc;
+  outline: none;
+}
+.check {
+  display: inline-block; /* чтобы check-box и label выровнялись по левой стороне родительского div*/
+  padding-left: 1px;
+  width: 275px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/*---------------Делаем нестандартный чекбокс-------------------*/
+.check label {
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+.check input {
+	display: none;
+}
+label:before {
+    display:inline-block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 1px solid #f7f7f7;
+    margin: 0 8px 2px 1px;
+    vertical-align:middle;
+    background: linear-gradient(to top left, #f7f7f7, #cecfd6);
+    cursor:pointer;
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+      0 0 0 1px #8c8e8c;
+}
+.check input:checked + label:before {
+  display:inline-block;
+  content: "\2714";
+  line-height: 8px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #494948;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #f7f7f7;
+  margin: 0 8px 2px 1px;
+  vertical-align:middle;
+  background: linear-gradient(to top left, #f7f7f7, #cecfd6);
+  cursor:pointer;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 0 0 1px #8c8e8c;
+  }
+/*----------------------------------------------------------*/
+
+.button {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+.button input {
+  width: 149px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(to top, #3686ca, #67c6e6);
+  box-shadow: 0 0 0 1px #4e9ed8;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.login p {
+  font-size: 11px;
+  color: #ccc;
+}
